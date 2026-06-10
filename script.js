@@ -46,7 +46,7 @@ function showScreen(targetId) {
 function validatePassword(event) {
   event.preventDefault();
 
-  const typedPassword = passwordInput.value.trim();
+  const typedPassword = passwordInput.value.replace(/\D/g, "");
 
   if (typedPassword === SECRET_PASSWORD) {
     passwordMessage.textContent = "Chave reconhecida. Atravessando...";

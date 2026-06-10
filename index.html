@@ -36,7 +36,7 @@
         <p>Algumas coisas só o coração reconhece.</p>
         <form id="passwordForm" class="access-form" autocomplete="off">
           <label for="passwordInput">Digite a chave para atravessar o Refúgio</label>
-          <input id="passwordInput" type="password" inputmode="numeric" placeholder="••••••" aria-describedby="passwordMessage" />
+          <input id="passwordInput" type="password" inputmode="numeric" pattern="[0-9\s/.-]*" placeholder="311225" aria-describedby="passwordMessage" />
           <p id="passwordMessage" class="form-message" role="status"></p>
           <button class="primary-btn" type="submit">abrir passagem</button>
         </form>
