@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema Celeste | Portal Secreto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cosmos" aria-hidden="true">
+    <span class="nebula nebula-one"></span>
+    <span class="nebula nebula-two"></span>
+    <span class="shooting-star star-a"></span>
+    <span class="shooting-star star-b"></span>
+  </div>
+
+  <main class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Arquivo confidencial · 12.06</p>
+        <h1>Sistema Celeste</h1>
+      </div>
+      <div class="status-pill" id="systemStatus">Acesso bloqueado</div>
+    </header>
+
+    <section class="screen active" id="entrada" data-screen="Entrada">
+      <div class="glass-card hero-card">
+        <span class="orbit-icon">✦</span>
+        <p class="eyebrow">Portal secreto entre duas pessoas</p>
+        <h2>Uma constelação inteira foi guardada para você.</h2>
+        <p>
+          Este sistema nasceu para abrir uma rota particular pelo nosso céu: mensagens,
+          memórias, músicas e pequenos sinais que só fazem sentido quando somos nós dois.
+        </p>
+        <button class="primary-btn" data-target="senha">Iniciar protocolo</button>
+      </div>
+    </section>
+
+    <section class="screen" id="senha" data-screen="Acesso restrito">
+      <div class="glass-card access-card">
+        <p class="eyebrow">Camada de segurança emocional</p>
+        <h2>Digite a senha do nosso universo</h2>
+        <p class="hint">Dica: o nome do sentimento que deixa tudo mais bonito.</p>
+        <form id="passwordForm" autocomplete="off">
+          <label for="passwordInput">Senha secreta</label>
+          <input id="passwordInput" type="password" placeholder="••••" aria-describedby="passwordMessage" />
+          <p id="passwordMessage" class="form-message" role="status"></p>
+          <button class="primary-btn" type="submit">Desbloquear estrelas</button>
+        </form>
+        <button class="ghost-btn" data-target="entrada">Voltar ao início</button>
+      </div>
+    </section>
+
+    <section class="screen" id="senha-correta" data-screen="Senha correta">
+      <div class="glass-card success-card">
+        <span class="pulse-core"></span>
+        <p class="eyebrow">Autorização confirmada</p>
+        <h2>Acesso concedido, meu amor.</h2>
+        <p>
+          As coordenadas bateram com o coração. O sistema reconheceu você como destino
+          principal desta galáxia particular.
+        </p>
+        <button class="primary-btn" data-target="ceu">Abrir mapa celeste</button>
+      </div>
+    </section>
+
+    <section class="screen" id="ceu" data-screen="Céu">
+      <div class="glass-card wide-card">
+        <p class="eyebrow">Módulo I · céu noturno</p>
+        <h2>Mapa das estrelas que nos protegem</h2>
+        <div class="constellation" aria-label="Constelação interativa de carinho">
+          <button class="star-node" style="--x: 14%; --y: 34%;" data-note="Seu sorriso acende o caminho.">✦</button>
+          <button class="star-node" style="--x: 36%; --y: 20%;" data-note="Você é meu lugar favorito.">✧</button>
+          <button class="star-node" style="--x: 60%; --y: 45%;" data-note="Com você, até silêncio vira abraço.">✦</button>
+          <button class="star-node" style="--x: 80%; --y: 26%;" data-note="Nosso amor tem luz própria.">✧</button>
+          <span class="constellation-line line-one"></span>
+          <span class="constellation-line line-two"></span>
+          <span class="constellation-line line-three"></span>
+        </div>
+        <p id="starMessage" class="floating-message">Toque nas estrelas para revelar sinais.</p>
+        <div class="button-row">
+          <button class="ghost-btn" data-target="senha-correta">Voltar</button>
+          <button class="primary-btn" data-target="sistema-emocional">Continuar rota</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="sistema-emocional" data-screen="Sistema emocional">
+      <div class="glass-card wide-card">
+        <p class="eyebrow">Módulo II · leitura sentimental</p>
+        <h2>Painel de sinais do coração</h2>
+        <div class="metrics-grid">
+          <article>
+            <span>Saudade</span>
+            <strong>97%</strong>
+            <div class="meter"><i style="width: 97%"></i></div>
+          </article>
+          <article>
+            <span>Vontade de abraço</span>
+            <strong>100%</strong>
+            <div class="meter"><i style="width: 100%"></i></div>
+          </article>
+          <article>
+            <span>Chance de eu te escolher</span>
+            <strong>∞</strong>
+            <div class="meter"><i style="width: 100%"></i></div>
+          </article>
+        </div>
+        <p class="soft-copy">
+          Diagnóstico final: meu universo fica mais estável quando você está perto.
+        </p>
+        <div class="button-row">
+          <button class="ghost-btn" data-target="ceu">Voltar</button>
+          <button class="primary-btn" data-target="spotify">Ouvir frequência</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="spotify" data-screen="Spotify">
+      <div class="glass-card music-card">
+        <p class="eyebrow">Módulo III · frequência sonora</p>
+        <h2>Trilha oficial da nossa órbita</h2>
+        <div class="vinyl" aria-hidden="true"><span></span></div>
+        <p>
+          Aperte o play na memória: aquela música que transforma qualquer distância em
+          contagem regressiva para o próximo encontro.
+        </p>
+        <a class="spotify-link" href="https://open.spotify.com/" target="_blank" rel="noreferrer">
+          Abrir playlist no Spotify
+        </a>
+        <div class="button-row">
+          <button class="ghost-btn" data-target="sistema-emocional">Voltar</button>
+          <button class="primary-btn" data-target="memorias">Ver memórias</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="memorias" data-screen="Memórias">
+      <div class="glass-card wide-card">
+        <p class="eyebrow">Módulo IV · arquivo de momentos</p>
+        <h2>Memórias salvas em poeira de estrela</h2>
+        <div class="memory-grid">
+          <article>
+            <span>01</span>
+            <h3>O primeiro brilho</h3>
+            <p>Quando percebi que você mudava a cor do meu dia.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>O riso secreto</h3>
+            <p>Aquele tipo de risada que vira senha de felicidade.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>O próximo capítulo</h3>
+            <p>Tudo que ainda vamos viver, em versão infinita.</p>
+          </article>
+        </div>
+        <div class="button-row">
+          <button class="ghost-btn" data-target="spotify">Voltar</button>
+          <button class="primary-btn" data-target="interacao">Ativar interação</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="interacao" data-screen="Interação">
+      <div class="glass-card interaction-card">
+        <p class="eyebrow">Módulo V · toque de carinho</p>
+        <h2>Gerador de mensagem celeste</h2>
+        <p id="loveMessage">Clique no cristal para receber uma transmissão do meu coração.</p>
+        <button class="crystal-btn" id="messageButton" aria-label="Gerar mensagem romântica">◇</button>
+        <div class="button-row">
+          <button class="ghost-btn" data-target="memorias">Voltar</button>
+          <button class="primary-btn" data-target="final">Encerrar missão</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="final" data-screen="Final">
+      <div class="glass-card hero-card final-card">
+        <p class="eyebrow">Sistema concluído</p>
+        <h2>Você chegou ao centro do meu universo.</h2>
+        <p>
+          Feliz Dia dos Namorados. Se este portal parece bonito, é porque tentei colocar
+          nele um pouco do que você ilumina em mim todos os dias.
+        </p>
+        <button class="primary-btn" data-target="entrada">Reiniciar nossa galáxia</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
