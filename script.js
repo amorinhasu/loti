@@ -18,7 +18,7 @@ let isTransitioning = false;
 
 const symbolicResults = [
   "Conexão inevitável",
-  "Vocês se reconhecem em silêncio",
+  "Vocês se reconhecem no silêncio",
   "Almas que já se entendem",
   "Um reencontro que ainda respira",
   "Sentimento que atravessa o tempo"

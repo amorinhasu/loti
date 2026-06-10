@@ -6,10 +6,15 @@
   <title>Refúgio | Experiência Emocional</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="refugio-background" aria-hidden="true">
+    <img src="https://i.pinimg.com/originals/b1/8d/51/b18d5124d08c77a110323493464ff7ae.gif" alt="" />
+  </div>
+  <div class="refugio-overlay" aria-hidden="true"></div>
+
   <div class="ambient-stars" aria-hidden="true">
     <span class="nebula nebula-one"></span>
     <span class="nebula nebula-two"></span>
@@ -19,8 +24,6 @@
 
   <main class="experience" id="experience">
     <section class="screen hero-screen active" id="hero" data-screen="Início">
-      <img class="hero-image" src="assets/ceu-refugio.svg" alt="Céu estrelado do Refúgio" />
-      <div class="hero-overlay"></div>
       <div class="hero-content cinematic-copy">
         <p class="eyebrow">experiência secreta</p>
         <h1>Refúgio</h1>
@@ -54,35 +57,111 @@
       </div>
     </section>
 
-    <section class="screen scroll-screen" id="galeria" data-screen="Galeria">
-      <div class="screen-panel">
+    <section class="screen scroll-screen" id="galeria" data-screen="Memórias">
+      <div class="screen-panel memories-panel">
         <div class="section-heading">
-          <p class="eyebrow">memórias suspensas</p>
-          <h2>Galeria manual</h2>
-          <p>Substitua os blocos abaixo pelas suas fotos quando quiser. Cada card já está preparado para imagem, legenda e uma frase escondida no hover.</p>
+          <p class="eyebrow">página 4 · álbum vivo</p>
+          <h2>Memórias</h2>
+          <p>Uma galeria emocional de lembranças e documentos importantes do Refúgio. Para adicionar novas memórias, basta copiar um dos blocos abaixo e trocar imagem, legenda e frase escondida.</p>
         </div>
-        <div class="polaroid-grid">
-          <article class="polaroid-card" data-secret="Ainda consigo lembrar do que senti aqui.">
-            <div class="photo-placeholder"><span>foto 01</span></div>
-            <h3>O primeiro instante</h3>
-            <p>uma lembrança para guardar com calma</p>
+
+        <div class="polaroid-grid memories-gallery" aria-label="Galeria de memórias do Refúgio">
+          <!-- Memória com foto: duplique este article para adicionar novas imagens. -->
+          <article class="polaroid-card memory-photo" data-secret="Uma lembrança viva guardada no céu do Refúgio.">
+            <figure>
+              <img src="https://cdn.discordapp.com/attachments/1378364780280152114/1378365737193967667/FreeFire_05_27_2025_23_02_45.png" alt="Memória do Refúgio 01" />
+              <figcaption>
+                <h3>Memória 01</h3>
+                <p>um registro que ficou importante</p>
+              </figcaption>
+            </figure>
           </article>
-          <article class="polaroid-card" data-secret="Tem lugares que viram casa por causa de alguém.">
-            <div class="photo-placeholder"><span>foto 02</span></div>
-            <h3>Um dia bonito</h3>
-            <p>a luz certa, a pessoa certa</p>
+
+          <article class="polaroid-card memory-photo" data-secret="Alguns instantes continuam brilhando mesmo depois.">
+            <figure>
+              <img src="https://cdn.discordapp.com/attachments/1378364780280152114/1378365745846550588/photo-output-17-1.jpg" alt="Memória do Refúgio 02" />
+              <figcaption>
+                <h3>Memória 02</h3>
+                <p>uma cena delicada para revisitar</p>
+              </figcaption>
+            </figure>
           </article>
-          <article class="polaroid-card" data-secret="O silêncio também sabe dizer saudade.">
-            <div class="photo-placeholder"><span>foto 03</span></div>
-            <h3>Entre risos</h3>
-            <p>pequenas cenas que ficaram</p>
+
+          <article class="polaroid-card memory-photo" data-secret="Tem mensagens que viram documento do coração.">
+            <figure>
+              <img src="https://cdn.discordapp.com/attachments/1378364780280152114/1382199728581902439/SmartSelect_20250610_143820_Chrome.jpg" alt="Memória do Refúgio 03" />
+              <figcaption>
+                <h3>Memória 03</h3>
+                <p>um detalhe salvo com carinho</p>
+              </figcaption>
+            </figure>
           </article>
-          <article class="polaroid-card" data-secret="Algumas memórias nunca terminam de acontecer.">
-            <div class="photo-placeholder"><span>foto 04</span></div>
-            <h3>Nosso tempo</h3>
-            <p>um recorte do que continua vivo</p>
+
+          <article class="polaroid-card memory-photo" data-secret="O Refúgio também mora nos dias simples.">
+            <figure>
+              <img src="https://media.discordapp.net/attachments/1378364780280152114/1403877028553555980/20250809_200147.jpg" alt="Memória do Refúgio 04" />
+              <figcaption>
+                <h3>Memória 04</h3>
+                <p>um pedaço de tempo guardado</p>
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="polaroid-card memory-photo" data-secret="Uma prova de que certas histórias merecem ser lembradas devagar.">
+            <figure>
+              <img src="https://cdn.discordapp.com/attachments/1371872976865333328/1465977355813130365/IMG_1310.jpg" alt="Memória do Refúgio 05" />
+              <figcaption>
+                <h3>Memória 05</h3>
+                <p>uma memória com cheiro de presença</p>
+              </figcaption>
+            </figure>
           </article>
         </div>
+
+        <div class="sealed-documents" aria-label="Documentos especiais do Refúgio">
+          <article class="document-card">
+            <div class="document-icon" aria-hidden="true">✉</div>
+            <div>
+              <p class="eyebrow">memória selada</p>
+              <h3>Quer Namorar Comigo?</h3>
+              <p>Um documento guardado como registro oficial de sentimento.</p>
+              <a class="document-link" href="https://cdn.discordapp.com/attachments/1441541587963478137/1511593828572856401/Quer_Namorar_Comigo_2.pdf" target="_blank" rel="noreferrer">Abrir documento</a>
+            </div>
+          </article>
+
+          <article class="document-card">
+            <div class="document-icon" aria-hidden="true">✦</div>
+            <div>
+              <p class="eyebrow">arquivo importante</p>
+              <h3>Document 1</h3>
+              <p>Uma memória em formato de documento, preservada como parte da história.</p>
+              <a class="document-link" href="https://cdn.discordapp.com/attachments/1441541587963478137/1511593828836966461/Document_1.pdf" target="_blank" rel="noreferrer">Abrir documento</a>
+            </div>
+          </article>
+        </div>
+
+        <section class="refuge-milestones" aria-labelledby="milestonesTitle">
+          <div class="section-heading compact-heading">
+            <p class="eyebrow">registros oficiais</p>
+            <h2 id="milestonesTitle">Marcos do Refúgio</h2>
+            <p>Datas importantes como documentos emocionais da história.</p>
+          </div>
+          <div class="milestone-timeline">
+            <article class="milestone-card">
+              <span class="milestone-icon" aria-hidden="true">✦</span>
+              <p class="milestone-label">Início de conexão</p>
+              <time datetime="2025-05-09">09.05.2025</time>
+              <p>“O início de tudo. O primeiro fio invisível que ligou duas histórias.”</p>
+            </article>
+            <article class="milestone-card">
+              <span class="milestone-icon" aria-hidden="true">☾</span>
+              <p class="milestone-label">Início do namoro</p>
+              <time datetime="2025-12-31">31.12.2025</time>
+              <p>“O dia em que o sentimento deixou de ser silêncio e virou escolha.”</p>
+            </article>
+          </div>
+        </section>
+
         <div class="button-row">
           <button class="ghost-btn" data-target="travessia">voltar</button>
           <button class="primary-btn" data-target="conexao">fazer teste de conexão</button>
