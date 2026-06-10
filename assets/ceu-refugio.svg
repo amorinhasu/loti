@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="g1" cx="28%" cy="22%" r="58%">
+      <stop offset="0" stop-color="#203a74"/>
+      <stop offset="0.42" stop-color="#101c43"/>
+      <stop offset="1" stop-color="#050813"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="72%" cy="24%" r="52%">
+      <stop offset="0" stop-color="#4b2a78" stop-opacity=".78"/>
+      <stop offset=".58" stop-color="#140f30" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#050813" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="28"/></filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#g1)"/>
+  <rect width="1600" height="1000" fill="url(#g2)"/>
+  <circle cx="1150" cy="210" r="210" fill="#bba4ff" opacity=".18" filter="url(#blur)"/>
+  <circle cx="410" cy="320" r="250" fill="#4fc3ff" opacity=".12" filter="url(#blur)"/>
+  <g fill="#fff">
+    <circle cx="95" cy="90" r="1.8" opacity=".8"/><circle cx="190" cy="250" r="1.2" opacity=".55"/><circle cx="310" cy="130" r="2" opacity=".9"/>
+    <circle cx="455" cy="210" r="1.4" opacity=".65"/><circle cx="610" cy="98" r="2.2" opacity=".75"/><circle cx="780" cy="180" r="1.1" opacity=".7"/>
+    <circle cx="920" cy="78" r="1.8" opacity=".85"/><circle cx="1080" cy="300" r="1.3" opacity=".72"/><circle cx="1260" cy="130" r="2.4" opacity=".9"/>
+    <circle cx="1460" cy="260" r="1.5" opacity=".7"/><circle cx="1380" cy="82" r="1" opacity=".55"/><circle cx="1520" cy="460" r="1.8" opacity=".8"/>
+    <circle cx="75" cy="510" r="1.3" opacity=".62"/><circle cx="250" cy="640" r="2" opacity=".8"/><circle cx="525" cy="520" r="1" opacity=".58"/>
+    <circle cx="705" cy="690" r="1.7" opacity=".76"/><circle cx="940" cy="560" r="1.1" opacity=".68"/><circle cx="1190" cy="715" r="2.1" opacity=".88"/>
+    <circle cx="1400" cy="620" r="1.4" opacity=".7"/><circle cx="1530" cy="820" r="1.9" opacity=".82"/>
+  </g>
+  <path d="M0 780 C220 690 370 760 560 690 C780 610 930 700 1130 625 C1320 555 1460 610 1600 540 L1600 1000 L0 1000 Z" fill="#020511" opacity=".62"/>
+</svg>
