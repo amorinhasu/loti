@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Refúgio | Experiência Emocional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="refugio-background" aria-hidden="true">
+    <img src="https://i.pinimg.com/originals/b1/8d/51/b18d5124d08c77a110323493464ff7ae.gif" alt="" />
+  </div>
+  <div class="refugio-overlay" aria-hidden="true"></div>
+
+  <div class="ambient-stars" aria-hidden="true">
+    <span class="nebula nebula-one"></span>
+    <span class="nebula nebula-two"></span>
+    <span class="shooting-star star-a"></span>
+    <span class="shooting-star star-b"></span>
+  </div>
+
+  <main class="experience" id="experience">
+    <section class="screen hero-screen active" id="hero" data-screen="Início">
+      <div class="hero-content cinematic-copy">
+        <p class="eyebrow">experiência secreta</p>
+        <h1>Refúgio</h1>
+        <p class="subtitle">um lugar onde o que sentimos ainda existe</p>
+        <button class="primary-btn" data-target="entrada">atravessar o céu</button>
+      </div>
+    </section>
+
+    <section class="screen" id="entrada" data-screen="Entrada">
+      <div class="glass-card narrow-card">
+        <p class="eyebrow">entrada silenciosa</p>
+        <h2>Nem tudo que é importante está visível.</h2>
+        <p>Algumas coisas só o coração reconhece.</p>
+        <form id="passwordForm" class="access-form" autocomplete="off">
+          <label for="passwordInput">Digite a chave para atravessar o Refúgio</label>
+          <input id="passwordInput" type="password" inputmode="numeric" pattern="[0-9\s/.-]*" placeholder="311225" aria-describedby="passwordMessage" />
+          <p id="passwordMessage" class="form-message" role="status"></p>
+          <button class="primary-btn" type="submit">abrir passagem</button>
+        </form>
+        <button class="ghost-btn" data-target="hero">voltar ao céu</button>
+      </div>
+    </section>
+
+    <section class="screen" id="travessia" data-screen="Travessia">
+      <div class="glass-card passage-card cinematic-copy">
+        <span class="breathing-orb" aria-hidden="true"></span>
+        <p class="eyebrow">porta aberta</p>
+        <h2>Você conseguiu atravessar.</h2>
+        <p>Algumas portas só se abrem quando ainda existe sentimento do outro lado.</p>
+        <button class="primary-btn" data-target="galeria">entrar nas memórias</button>
+      </div>
+    </section>
+
+    <section class="screen scroll-screen" id="galeria" data-screen="Memórias">
+      <div class="screen-panel memories-panel">
+        <div class="section-heading">
+          <p class="eyebrow">página 4 · álbum vivo</p>
+          <h2>Memórias</h2>
+          <p>Uma galeria emocional de lembranças e documentos importantes do Refúgio. Para adicionar novas memórias, basta copiar um dos blocos abaixo e trocar imagem, legenda e frase escondida.</p>
+        </div>
+
+        <div class="polaroid-grid memories-gallery" aria-label="Galeria de memórias do Refúgio">
+          <!-- Memória com foto: duplique este article para adicionar novas imagens. -->
+          <article class="polaroid-card memory-photo" data-secret="Uma lembrança viva guardada no céu do Refúgio.">
+            <figure>
+              <img src="https://cdn.discordapp.com/attachments/1378364780280152114/1378365737193967667/FreeFire_05_27_2025_23_02_45.png" alt="Memória do Refúgio 01" />
+              <figcaption>
+                <h3>Memória 01</h3>
+                <p>um registro que ficou importante</p>
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="polaroid-card memory-photo" data-secret="Alguns instantes continuam brilhando mesmo depois.">
+            <figure>
+              <img src="https://cdn.discordapp.com/attachments/1378364780280152114/1378365745846550588/photo-output-17-1.jpg" alt="Memória do Refúgio 02" />
+              <figcaption>
+                <h3>Memória 02</h3>
+                <p>uma cena delicada para revisitar</p>
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="polaroid-card memory-photo" data-secret="Tem mensagens que viram documento do coração.">
+            <figure>
+              <img src="https://cdn.discordapp.com/attachments/1378364780280152114/1382199728581902439/SmartSelect_20250610_143820_Chrome.jpg" alt="Memória do Refúgio 03" />
+              <figcaption>
+                <h3>Memória 03</h3>
+                <p>um detalhe salvo com carinho</p>
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="polaroid-card memory-photo" data-secret="O Refúgio também mora nos dias simples.">
+            <figure>
+              <img src="https://media.discordapp.net/attachments/1378364780280152114/1403877028553555980/20250809_200147.jpg" alt="Memória do Refúgio 04" />
+              <figcaption>
+                <h3>Memória 04</h3>
+                <p>um pedaço de tempo guardado</p>
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="polaroid-card memory-photo" data-secret="Uma prova de que certas histórias merecem ser lembradas devagar.">
+            <figure>
+              <img src="https://cdn.discordapp.com/attachments/1371872976865333328/1465977355813130365/IMG_1310.jpg" alt="Memória do Refúgio 05" />
+              <figcaption>
+                <h3>Memória 05</h3>
+                <p>uma memória com cheiro de presença</p>
+              </figcaption>
+            </figure>
+          </article>
+        </div>
+
+        <div class="sealed-documents" aria-label="Documentos especiais do Refúgio">
+          <article class="document-card">
+            <div class="document-icon" aria-hidden="true">✉</div>
+            <div>
+              <p class="eyebrow">memória selada</p>
+              <h3>Quer Namorar Comigo?</h3>
+              <p>Um documento guardado como registro oficial de sentimento.</p>
+              <a class="document-link" href="https://cdn.discordapp.com/attachments/1441541587963478137/1511593828572856401/Quer_Namorar_Comigo_2.pdf" target="_blank" rel="noreferrer">Abrir documento</a>
+            </div>
+          </article>
+
+          <article class="document-card">
+            <div class="document-icon" aria-hidden="true">✦</div>
+            <div>
+              <p class="eyebrow">arquivo importante</p>
+              <h3>Document 1</h3>
+              <p>Uma memória em formato de documento, preservada como parte da história.</p>
+              <a class="document-link" href="https://cdn.discordapp.com/attachments/1441541587963478137/1511593828836966461/Document_1.pdf" target="_blank" rel="noreferrer">Abrir documento</a>
+            </div>
+          </article>
+        </div>
+
+        <section class="refuge-milestones" aria-labelledby="milestonesTitle">
+          <div class="section-heading compact-heading">
+            <p class="eyebrow">registros oficiais</p>
+            <h2 id="milestonesTitle">Marcos do Refúgio</h2>
+            <p>Datas importantes como documentos emocionais da história.</p>
+          </div>
+          <div class="milestone-timeline">
+            <article class="milestone-card">
+              <span class="milestone-icon" aria-hidden="true">✦</span>
+              <p class="milestone-label">Início de conexão</p>
+              <time datetime="2025-05-09">09.05.2025</time>
+              <p>“O início de tudo. O primeiro fio invisível que ligou duas histórias.”</p>
+            </article>
+            <article class="milestone-card">
+              <span class="milestone-icon" aria-hidden="true">☾</span>
+              <p class="milestone-label">Início do namoro</p>
+              <time datetime="2025-12-31">31.12.2025</time>
+              <p>“O dia em que o sentimento deixou de ser silêncio e virou escolha.”</p>
+            </article>
+          </div>
+        </section>
+
+        <div class="button-row">
+          <button class="ghost-btn" data-target="travessia">voltar</button>
+          <button class="primary-btn" data-target="conexao">fazer teste de conexão</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen scroll-screen" id="conexao" data-screen="Conexão">
+      <div class="screen-panel ritual-panel">
+        <div class="section-heading">
+          <p class="eyebrow">ritual emocional</p>
+          <h2>Teste de Conexão</h2>
+          <p>Responda com o coração. O Refúgio não calcula números: ele interpreta sinais.</p>
+        </div>
+        <form id="connectionForm" class="connection-form">
+          <fieldset>
+            <legend>Quando vocês se olham, parece que existe algo não dito?</legend>
+            <label><input type="radio" name="q1" value="silent" required /> Sim, como se o silêncio entendesse.</label>
+            <label><input type="radio" name="q1" value="soft" /> Às vezes, de um jeito delicado.</label>
+          </fieldset>
+          <fieldset>
+            <legend>Qual lembrança mais permanece?</legend>
+            <label><input type="radio" name="q2" value="memory" required /> A que volta sem pedir licença.</label>
+            <label><input type="radio" name="q2" value="future" /> A que ainda queremos viver.</label>
+          </fieldset>
+          <fieldset>
+            <legend>Se o Refúgio respondesse por vocês, ele diria:</legend>
+            <label><input type="radio" name="q3" value="inevitable" required /> “algumas almas se reconhecem”</label>
+            <label><input type="radio" name="q3" value="written" /> “a história ainda está escrevendo”</label>
+          </fieldset>
+          <button class="primary-btn" type="submit">revelar conexão</button>
+        </form>
+        <div class="connection-result" id="connectionResult" aria-live="polite">
+          <span>resultado simbólico</span>
+          <strong>aguardando respostas...</strong>
+        </div>
+        <div class="button-row">
+          <button class="ghost-btn" data-target="galeria">voltar</button>
+          <button class="primary-btn" data-target="som">entrar no som</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="som" data-screen="Som">
+      <div class="glass-card music-card">
+        <p class="eyebrow">frequência do refúgio</p>
+        <h2>Áudio / Spotify</h2>
+        <p>O som só começa quando você escolhe entrar. Nada aqui força o sentimento: ele só convida.</p>
+        <button class="primary-btn" id="spotifyButton" type="button">entrar no som do Refúgio</button>
+        <div class="spotify-frame hidden" id="spotifyFrame" aria-live="polite"></div>
+        <div class="button-row">
+          <button class="ghost-btn" data-target="conexao">voltar</button>
+          <button class="primary-btn" data-target="memorias">abrir memórias vivas</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen scroll-screen" id="memorias" data-screen="Memórias vivas">
+      <div class="screen-panel">
+        <div class="section-heading">
+          <p class="eyebrow">final interativo</p>
+          <h2>Página de memórias</h2>
+          <p>Passe o mouse pelas lembranças para revelar frases escondidas. Depois, desbloqueie a carta final se quiser ir mais fundo.</p>
+        </div>
+        <div class="memory-wall">
+          <article class="memory-card" data-hidden="foi aqui que algo ficou mais forte">
+            <div class="photo-placeholder warm"><span>foto</span></div>
+            <p>um lugar que virou memória</p>
+          </article>
+          <article class="memory-card" data-hidden="tem abraço que continua mesmo depois">
+            <div class="photo-placeholder violet"><span>foto</span></div>
+            <p>um abraço guardado</p>
+          </article>
+          <article class="memory-card" data-hidden="o coração sabe quando ainda é verdade">
+            <div class="photo-placeholder blue"><span>foto</span></div>
+            <p>uma noite no nosso céu</p>
+          </article>
+        </div>
+        <div class="secret-letter" id="secretLetter">
+          <button class="ghost-btn" id="letterButton" type="button">desbloquear carta final secreta</button>
+          <p class="letter-copy hidden" id="letterCopy">Se algum dia tudo parecer distante, lembra: existe um Refúgio onde a nossa história continua respirando baixinho.</p>
+        </div>
+        <div class="button-row">
+          <button class="ghost-btn" data-target="som">voltar</button>
+          <button class="primary-btn" data-target="final">ver o começo</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen final-screen" id="final" data-screen="Final">
+      <div class="rocket-scene" aria-hidden="true">
+        <span class="moon"></span>
+        <span class="rocket">🚀</span>
+      </div>
+      <div class="final-copy cinematic-copy">
+        <p class="eyebrow">cena final</p>
+        <h2>É só o começo...</h2>
+        <p>o resto ainda está sendo escrito por nós dois</p>
+        <div class="button-row">
+          <button class="ghost-btn" id="silenceButton" type="button">modo silêncio</button>
+          <button class="primary-btn" data-target="hero">recomeçar</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
