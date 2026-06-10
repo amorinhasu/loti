@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Refúgio | Experiência Emocional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient-stars" aria-hidden="true">
+    <span class="nebula nebula-one"></span>
+    <span class="nebula nebula-two"></span>
+    <span class="shooting-star star-a"></span>
+    <span class="shooting-star star-b"></span>
+  </div>
+
+  <main class="experience" id="experience">
+    <section class="screen hero-screen active" id="hero" data-screen="Início">
+      <img class="hero-image" src="assets/ceu-refugio.svg" alt="Céu estrelado do Refúgio" />
+      <div class="hero-overlay"></div>
+      <div class="hero-content cinematic-copy">
+        <p class="eyebrow">experiência secreta</p>
+        <h1>Refúgio</h1>
+        <p class="subtitle">um lugar onde o que sentimos ainda existe</p>
+        <button class="primary-btn" data-target="entrada">atravessar o céu</button>
+      </div>
+    </section>
+
+    <section class="screen" id="entrada" data-screen="Entrada">
+      <div class="glass-card narrow-card">
+        <p class="eyebrow">entrada silenciosa</p>
+        <h2>Nem tudo que é importante está visível.</h2>
+        <p>Algumas coisas só o coração reconhece.</p>
+        <form id="passwordForm" class="access-form" autocomplete="off">
+          <label for="passwordInput">Digite a chave para atravessar o Refúgio</label>
+          <input id="passwordInput" type="password" inputmode="numeric" placeholder="••••••" aria-describedby="passwordMessage" />
+          <p id="passwordMessage" class="form-message" role="status"></p>
+          <button class="primary-btn" type="submit">abrir passagem</button>
+        </form>
+        <button class="ghost-btn" data-target="hero">voltar ao céu</button>
+      </div>
+    </section>
+
+    <section class="screen" id="travessia" data-screen="Travessia">
+      <div class="glass-card passage-card cinematic-copy">
+        <span class="breathing-orb" aria-hidden="true"></span>
+        <p class="eyebrow">porta aberta</p>
+        <h2>Você conseguiu atravessar.</h2>
+        <p>Algumas portas só se abrem quando ainda existe sentimento do outro lado.</p>
+        <button class="primary-btn" data-target="galeria">entrar nas memórias</button>
+      </div>
+    </section>
+
+    <section class="screen scroll-screen" id="galeria" data-screen="Galeria">
+      <div class="screen-panel">
+        <div class="section-heading">
+          <p class="eyebrow">memórias suspensas</p>
+          <h2>Galeria manual</h2>
+          <p>Substitua os blocos abaixo pelas suas fotos quando quiser. Cada card já está preparado para imagem, legenda e uma frase escondida no hover.</p>
+        </div>
+        <div class="polaroid-grid">
+          <article class="polaroid-card" data-secret="Ainda consigo lembrar do que senti aqui.">
+            <div class="photo-placeholder"><span>foto 01</span></div>
+            <h3>O primeiro instante</h3>
+            <p>uma lembrança para guardar com calma</p>
+          </article>
+          <article class="polaroid-card" data-secret="Tem lugares que viram casa por causa de alguém.">
+            <div class="photo-placeholder"><span>foto 02</span></div>
+            <h3>Um dia bonito</h3>
+            <p>a luz certa, a pessoa certa</p>
+          </article>
+          <article class="polaroid-card" data-secret="O silêncio também sabe dizer saudade.">
+            <div class="photo-placeholder"><span>foto 03</span></div>
+            <h3>Entre risos</h3>
+            <p>pequenas cenas que ficaram</p>
+          </article>
+          <article class="polaroid-card" data-secret="Algumas memórias nunca terminam de acontecer.">
+            <div class="photo-placeholder"><span>foto 04</span></div>
+            <h3>Nosso tempo</h3>
+            <p>um recorte do que continua vivo</p>
+          </article>
+        </div>
+        <div class="button-row">
+          <button class="ghost-btn" data-target="travessia">voltar</button>
+          <button class="primary-btn" data-target="conexao">fazer teste de conexão</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen scroll-screen" id="conexao" data-screen="Conexão">
+      <div class="screen-panel ritual-panel">
+        <div class="section-heading">
+          <p class="eyebrow">ritual emocional</p>
+          <h2>Teste de Conexão</h2>
+          <p>Responda com o coração. O Refúgio não calcula números: ele interpreta sinais.</p>
+        </div>
+        <form id="connectionForm" class="connection-form">
+          <fieldset>
+            <legend>Quando vocês se olham, parece que existe algo não dito?</legend>
+            <label><input type="radio" name="q1" value="silent" required /> Sim, como se o silêncio entendesse.</label>
+            <label><input type="radio" name="q1" value="soft" /> Às vezes, de um jeito delicado.</label>
+          </fieldset>
+          <fieldset>
+            <legend>Qual lembrança mais permanece?</legend>
+            <label><input type="radio" name="q2" value="memory" required /> A que volta sem pedir licença.</label>
+            <label><input type="radio" name="q2" value="future" /> A que ainda queremos viver.</label>
+          </fieldset>
+          <fieldset>
+            <legend>Se o Refúgio respondesse por vocês, ele diria:</legend>
+            <label><input type="radio" name="q3" value="inevitable" required /> “algumas almas se reconhecem”</label>
+            <label><input type="radio" name="q3" value="written" /> “a história ainda está escrevendo”</label>
+          </fieldset>
+          <button class="primary-btn" type="submit">revelar conexão</button>
+        </form>
+        <div class="connection-result" id="connectionResult" aria-live="polite">
+          <span>resultado simbólico</span>
+          <strong>aguardando respostas...</strong>
+        </div>
+        <div class="button-row">
+          <button class="ghost-btn" data-target="galeria">voltar</button>
+          <button class="primary-btn" data-target="som">entrar no som</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="som" data-screen="Som">
+      <div class="glass-card music-card">
+        <p class="eyebrow">frequência do refúgio</p>
+        <h2>Áudio / Spotify</h2>
+        <p>O som só começa quando você escolhe entrar. Nada aqui força o sentimento: ele só convida.</p>
+        <button class="primary-btn" id="spotifyButton" type="button">entrar no som do Refúgio</button>
+        <div class="spotify-frame hidden" id="spotifyFrame" aria-live="polite"></div>
+        <div class="button-row">
+          <button class="ghost-btn" data-target="conexao">voltar</button>
+          <button class="primary-btn" data-target="memorias">abrir memórias vivas</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen scroll-screen" id="memorias" data-screen="Memórias vivas">
+      <div class="screen-panel">
+        <div class="section-heading">
+          <p class="eyebrow">final interativo</p>
+          <h2>Página de memórias</h2>
+          <p>Passe o mouse pelas lembranças para revelar frases escondidas. Depois, desbloqueie a carta final se quiser ir mais fundo.</p>
+        </div>
+        <div class="memory-wall">
+          <article class="memory-card" data-hidden="foi aqui que algo ficou mais forte">
+            <div class="photo-placeholder warm"><span>foto</span></div>
+            <p>um lugar que virou memória</p>
+          </article>
+          <article class="memory-card" data-hidden="tem abraço que continua mesmo depois">
+            <div class="photo-placeholder violet"><span>foto</span></div>
+            <p>um abraço guardado</p>
+          </article>
+          <article class="memory-card" data-hidden="o coração sabe quando ainda é verdade">
+            <div class="photo-placeholder blue"><span>foto</span></div>
+            <p>uma noite no nosso céu</p>
+          </article>
+        </div>
+        <div class="secret-letter" id="secretLetter">
+          <button class="ghost-btn" id="letterButton" type="button">desbloquear carta final secreta</button>
+          <p class="letter-copy hidden" id="letterCopy">Se algum dia tudo parecer distante, lembra: existe um Refúgio onde a nossa história continua respirando baixinho.</p>
+        </div>
+        <div class="button-row">
+          <button class="ghost-btn" data-target="som">voltar</button>
+          <button class="primary-btn" data-target="final">ver o começo</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen final-screen" id="final" data-screen="Final">
+      <div class="rocket-scene" aria-hidden="true">
+        <span class="moon"></span>
+        <span class="rocket">🚀</span>
+      </div>
+      <div class="final-copy cinematic-copy">
+        <p class="eyebrow">cena final</p>
+        <h2>É só o começo...</h2>
+        <p>o resto ainda está sendo escrito por nós dois</p>
+        <div class="button-row">
+          <button class="ghost-btn" id="silenceButton" type="button">modo silêncio</button>
+          <button class="primary-btn" data-target="hero">recomeçar</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
